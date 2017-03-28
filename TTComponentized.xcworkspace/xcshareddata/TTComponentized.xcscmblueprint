@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "047E1D5DAB6582517EF734BB0D8D3BC7AEBBD670",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9CA5C7D9ABAD30B95FFB22C36728BF9B307C6E4F" : 9223372036854775807,
+    "E3CC613BA47E5B7214A2CFB4F252F19E90C1EA72" : 9223372036854775807,
+    "047E1D5DAB6582517EF734BB0D8D3BC7AEBBD670" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F84C23B2-0A0C-4EE5-98A2-F2BE0C74E317",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9CA5C7D9ABAD30B95FFB22C36728BF9B307C6E4F" : "TTLogin_Category\/",
+    "E3CC613BA47E5B7214A2CFB4F252F19E90C1EA72" : "TTLogin\/",
+    "047E1D5DAB6582517EF734BB0D8D3BC7AEBBD670" : "TTComponentized\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TTComponentized",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TTComponentized.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:travel-iLabsTechTalk\/TTComponentized.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "047E1D5DAB6582517EF734BB0D8D3BC7AEBBD670"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:travel-iLabsTechTalk\/TTLogin_Category.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9CA5C7D9ABAD30B95FFB22C36728BF9B307C6E4F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:travel-iLabsTechTalk\/TTLogin.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E3CC613BA47E5B7214A2CFB4F252F19E90C1EA72"
+    }
+  ]
+}
