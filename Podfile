@@ -9,11 +9,15 @@ def publicPods
 end
 
 def privatePods
+  #pod "TTLogin", :path => "../TTLogin"
+  pod "TTLogin"
   #pod "TTLogin_Category", :path => "../TTLogin_Category"
   pod "TTLogin_Category"
   
-  #pod "TTLogin", :path => "../TTLogin"
-  pod "TTLogin"
+  pod "TTCoding"
+  pod "TTCoding_Category"
+  
+  pod "TTDemo_Category"
 end
 
 target 'TTComponentized' do

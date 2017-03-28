@@ -13,7 +13,6 @@
 		ED31A2E11E8951F200E058B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED31A2E01E8951F200E058B8 /* Assets.xcassets */; };
 		ED31A2E41E8951F200E058B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED31A2E21E8951F200E058B8 /* LaunchScreen.storyboard */; };
 		ED31A2EE1E8953FB00E058B8 /* TTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED31A2ED1E8953FB00E058B8 /* TTMainViewController.m */; };
-		ED31A2F51E895FAE00E058B8 /* TTCodingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED31A2F41E895FAE00E058B8 /* TTCodingViewController.m */; };
 		ED31A2F91E8960EE00E058B8 /* TTDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED31A2F81E8960EE00E058B8 /* TTDemoViewController.m */; };
 		F89FA78AFEE1461906F66BF6 /* libPods-TTComponentized.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47911C6707A251771CB0115E /* libPods-TTComponentized.a */; };
 /* End PBXBuildFile section */
@@ -32,8 +31,6 @@
 		ED31A2E51E8951F200E058B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED31A2EC1E8953FB00E058B8 /* TTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMainViewController.h; sourceTree = "<group>"; };
 		ED31A2ED1E8953FB00E058B8 /* TTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMainViewController.m; sourceTree = "<group>"; };
-		ED31A2F31E895FAE00E058B8 /* TTCodingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTCodingViewController.h; sourceTree = "<group>"; };
-		ED31A2F41E895FAE00E058B8 /* TTCodingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTCodingViewController.m; sourceTree = "<group>"; };
 		ED31A2F71E8960EE00E058B8 /* TTDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDemoViewController.h; sourceTree = "<group>"; };
 		ED31A2F81E8960EE00E058B8 /* TTDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDemoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,7 +92,6 @@
 				ED31A2E21E8951F200E058B8 /* LaunchScreen.storyboard */,
 				ED31A2E51E8951F200E058B8 /* Info.plist */,
 				ED31A2EB1E8953D200E058B8 /* Main Page */,
-				ED31A2F61E895FC200E058B8 /* Coding */,
 				ED31A2FA1E8960F400E058B8 /* Demo */,
 				ED31A2D11E8951F200E058B8 /* Supporting Files */,
 			);
@@ -117,15 +113,6 @@
 				ED31A2ED1E8953FB00E058B8 /* TTMainViewController.m */,
 			);
 			name = "Main Page";
-			sourceTree = "<group>";
-		};
-		ED31A2F61E895FC200E058B8 /* Coding */ = {
-			isa = PBXGroup;
-			children = (
-				ED31A2F31E895FAE00E058B8 /* TTCodingViewController.h */,
-				ED31A2F41E895FAE00E058B8 /* TTCodingViewController.m */,
-			);
-			name = Coding;
 			sourceTree = "<group>";
 		};
 		ED31A2FA1E8960F400E058B8 /* Demo */ = {
@@ -261,7 +248,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED31A2D61E8951F200E058B8 /* AppDelegate.m in Sources */,
-				ED31A2F51E895FAE00E058B8 /* TTCodingViewController.m in Sources */,
 				ED31A2EE1E8953FB00E058B8 /* TTMainViewController.m in Sources */,
 				ED31A2D31E8951F200E058B8 /* main.m in Sources */,
 				ED31A2F91E8960EE00E058B8 /* TTDemoViewController.m in Sources */,
