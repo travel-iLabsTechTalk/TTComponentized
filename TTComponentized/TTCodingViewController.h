@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  TTCodingViewController.h
 //  TTComponentized
 //
 //  Created by Travel Chu on 3/27/17.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface TTCodingViewController : UIViewController
 
++ (NSString *)outputText;
 
 @end
-

@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  TTLoginViewController.h
 //  TTComponentized
 //
 //  Created by Travel Chu on 3/27/17.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+extern NSString *const TTLoggedInKey;
 
+@interface TTLoginViewController : UIViewController
 
 @end
-
