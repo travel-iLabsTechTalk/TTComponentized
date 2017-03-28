@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface TTDemoViewController : UIViewController
-
+@property (nonatomic, strong) NSString *text;
 @end

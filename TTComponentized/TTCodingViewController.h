@@ -10,6 +10,4 @@
 
 @interface TTCodingViewController : UIViewController
 
-+ (NSString *)outputText;
-
 @end

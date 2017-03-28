@@ -7,38 +7,32 @@
 //
 
 #import "TTCodingViewController.h"
-
-static NSString *const TTDemoTextKey = @"TTDemoTextKey";
+#import "TTDemoViewController.h"
 
 @interface TTCodingViewController () <UITextFieldDelegate>
-@property (weak, nonatomic) IBOutlet UITextField *textField;
-
+  @property (weak, nonatomic) IBOutlet UITextField *textField;
+  @property (weak, nonatomic) IBOutlet UIButton *runButton;
+  
 @end
 
 @implementation TTCodingViewController
-
+  
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+  [super viewDidLoad];
+  self.runButton.layer.cornerRadius = 5.0;
 }
-
-- (void)viewWillDisappear:(BOOL)animated {
-  [super viewWillDisappear:animated];
-  [[NSUserDefaults standardUserDefaults] setObject:self.textField.text forKey:TTDemoTextKey];
-  [[NSUserDefaults standardUserDefaults] synchronize];
+  
+- (IBAction)runPressed:(id)sender {
+  TTDemoViewController *demoVC = [self.storyboard instantiateViewControllerWithIdentifier:@"TTDemoViewController"];
+  demoVC.text = self.textField.text;
+  [self.navigationController pushViewController:demoVC animated:YES];
 }
-
-#pragma mark - Public Methods
-
-+ (NSString *)outputText {
-  return [[NSUserDefaults standardUserDefaults] objectForKey:TTDemoTextKey];
-}
-
+  
 #pragma mark - UITextFieldDelegate
-
+  
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
   [textField resignFirstResponder];
   return YES;
 }
-
-@end
+  
+  @end

@@ -7,7 +7,6 @@
 //
 
 #import "TTDemoViewController.h"
-#import "TTCodingViewController.h"
 
 @interface TTDemoViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *textView;
@@ -23,7 +22,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
-  self.textView.text = [TTCodingViewController outputText];
+  self.textView.text = self.text;
 }
 
 @end

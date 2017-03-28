@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Iaf-wJ-XdP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Iaf-wJ-XdP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -364,12 +364,28 @@ Cg
                                     <outlet property="delegate" destination="YH1-th-LPo" id="1ix-Ua-kDM"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEG-J1-r6b">
+                                <rect key="frame" x="37" y="471.5" width="300" height="40"/>
+                                <color key="backgroundColor" red="0.85899999999999999" green="0.17100000000000001" blue="0.219" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="4Y1-Nx-xQq"/>
+                                    <constraint firstAttribute="height" constant="40" id="Nry-F6-Owl"/>
+                                </constraints>
+                                <state key="normal" title="Run">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="runPressed:" destination="YH1-th-LPo" eventType="touchUpInside" id="jqh-Cc-mhg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="tXa-cr-JY9" secondAttribute="trailing" constant="51" id="1sO-5D-XzU"/>
+                            <constraint firstItem="FEG-J1-r6b" firstAttribute="centerX" secondItem="Mp2-yW-9Qf" secondAttribute="centerX" id="51x-So-XhZ"/>
                             <constraint firstItem="Uit-Qt-daJ" firstAttribute="centerY" secondItem="Mp2-yW-9Qf" secondAttribute="centerY" id="KhM-pG-OMy"/>
                             <constraint firstItem="Uit-Qt-daJ" firstAttribute="top" secondItem="tXa-cr-JY9" secondAttribute="bottom" constant="-46.5" id="M1r-8s-505"/>
+                            <constraint firstItem="FEG-J1-r6b" firstAttribute="top" secondItem="Uit-Qt-daJ" secondAttribute="bottom" constant="100" id="TSq-7K-thk"/>
                             <constraint firstAttribute="trailing" secondItem="Uit-Qt-daJ" secondAttribute="trailing" constant="8" id="V3o-vl-C8j"/>
                             <constraint firstItem="tXa-cr-JY9" firstAttribute="leading" secondItem="Mp2-yW-9Qf" secondAttribute="leadingMargin" constant="88" id="YJ3-ze-sv7"/>
                             <constraint firstItem="Uit-Qt-daJ" firstAttribute="leading" secondItem="Mp2-yW-9Qf" secondAttribute="leading" constant="8" id="vnt-t8-GQe"/>
@@ -377,6 +393,7 @@ Cg
                     </view>
                     <navigationItem key="navigationItem" title="Coding Page" id="TIR-6h-Pt2"/>
                     <connections>
+                        <outlet property="runButton" destination="FEG-J1-r6b" id="fck-ns-FsN"/>
                         <outlet property="textField" destination="tXa-cr-JY9" id="zNs-Ge-o02"/>
                     </connections>
                 </viewController>
