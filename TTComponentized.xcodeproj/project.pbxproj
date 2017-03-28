@@ -14,6 +14,7 @@
 		ED31A2E41E8951F200E058B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED31A2E21E8951F200E058B8 /* LaunchScreen.storyboard */; };
 		ED31A2EE1E8953FB00E058B8 /* TTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED31A2ED1E8953FB00E058B8 /* TTMainViewController.m */; };
 		ED31A2F91E8960EE00E058B8 /* TTDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED31A2F81E8960EE00E058B8 /* TTDemoViewController.m */; };
+		ED7A205E1E8A970000576F89 /* Target_TTDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7A205D1E8A970000576F89 /* Target_TTDemo.m */; };
 		F89FA78AFEE1461906F66BF6 /* libPods-TTComponentized.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47911C6707A251771CB0115E /* libPods-TTComponentized.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,8 @@
 		ED31A2ED1E8953FB00E058B8 /* TTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMainViewController.m; sourceTree = "<group>"; };
 		ED31A2F71E8960EE00E058B8 /* TTDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDemoViewController.h; sourceTree = "<group>"; };
 		ED31A2F81E8960EE00E058B8 /* TTDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDemoViewController.m; sourceTree = "<group>"; };
+		ED7A205C1E8A970000576F89 /* Target_TTDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_TTDemo.h; sourceTree = "<group>"; };
+		ED7A205D1E8A970000576F89 /* Target_TTDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_TTDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,7 @@
 				ED31A2E01E8951F200E058B8 /* Assets.xcassets */,
 				ED31A2E21E8951F200E058B8 /* LaunchScreen.storyboard */,
 				ED31A2E51E8951F200E058B8 /* Info.plist */,
+				ED7A205B1E8A96C800576F89 /* Targets_TTDemo */,
 				ED31A2EB1E8953D200E058B8 /* Main Page */,
 				ED31A2FA1E8960F400E058B8 /* Demo */,
 				ED31A2D11E8951F200E058B8 /* Supporting Files */,
@@ -122,6 +126,15 @@
 				ED31A2F81E8960EE00E058B8 /* TTDemoViewController.m */,
 			);
 			name = Demo;
+			sourceTree = "<group>";
+		};
+		ED7A205B1E8A96C800576F89 /* Targets_TTDemo */ = {
+			isa = PBXGroup;
+			children = (
+				ED7A205C1E8A970000576F89 /* Target_TTDemo.h */,
+				ED7A205D1E8A970000576F89 /* Target_TTDemo.m */,
+			);
+			name = Targets_TTDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +262,7 @@
 			files = (
 				ED31A2D61E8951F200E058B8 /* AppDelegate.m in Sources */,
 				ED31A2EE1E8953FB00E058B8 /* TTMainViewController.m in Sources */,
+				ED7A205E1E8A970000576F89 /* Target_TTDemo.m in Sources */,
 				ED31A2D31E8951F200E058B8 /* main.m in Sources */,
 				ED31A2F91E8960EE00E058B8 /* TTDemoViewController.m in Sources */,
 			);
