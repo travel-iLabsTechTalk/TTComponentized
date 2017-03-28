@@ -7,7 +7,7 @@
 //
 
 #import "TTMainViewController.h"
-#import "TTLoginViewController.h"
+#import "CTMediator+TTLogin.h"
 
 @interface TTMainViewController ()
 
@@ -27,7 +27,7 @@
 
 - (void)loginIfNeeded {
   if (![[NSUserDefaults standardUserDefaults] boolForKey:TTLoggedInKey]) {
-    TTLoginViewController *loginVC = [self.storyboard instantiateViewControllerWithIdentifier:@"TTLoginViewController"];
+    UIViewController *loginVC = [[CTMediator sharedInstance] TTLogin_viewController];
     [self presentViewController:loginVC animated:YES completion:nil];
   }
 }

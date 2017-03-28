@@ -13,12 +13,15 @@
 		ED31A2E11E8951F200E058B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED31A2E01E8951F200E058B8 /* Assets.xcassets */; };
 		ED31A2E41E8951F200E058B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED31A2E21E8951F200E058B8 /* LaunchScreen.storyboard */; };
 		ED31A2EE1E8953FB00E058B8 /* TTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED31A2ED1E8953FB00E058B8 /* TTMainViewController.m */; };
-		ED31A2F21E89565B00E058B8 /* TTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED31A2F11E89565B00E058B8 /* TTLoginViewController.m */; };
 		ED31A2F51E895FAE00E058B8 /* TTCodingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED31A2F41E895FAE00E058B8 /* TTCodingViewController.m */; };
 		ED31A2F91E8960EE00E058B8 /* TTDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED31A2F81E8960EE00E058B8 /* TTDemoViewController.m */; };
+		F89FA78AFEE1461906F66BF6 /* libPods-TTComponentized.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47911C6707A251771CB0115E /* libPods-TTComponentized.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47911C6707A251771CB0115E /* libPods-TTComponentized.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TTComponentized.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CE1FF2A2B28F79B9507D18E /* Pods-TTComponentized.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTComponentized.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTComponentized/Pods-TTComponentized.release.xcconfig"; sourceTree = "<group>"; };
+		A1A8E3FF0A7BE9B8320D1D69 /* Pods-TTComponentized.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTComponentized.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTComponentized/Pods-TTComponentized.debug.xcconfig"; sourceTree = "<group>"; };
 		ED31A2CE1E8951F200E058B8 /* TTComponentized.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTComponentized.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED31A2D21E8951F200E058B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED31A2D41E8951F200E058B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,8 +32,6 @@
 		ED31A2E51E8951F200E058B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED31A2EC1E8953FB00E058B8 /* TTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMainViewController.h; sourceTree = "<group>"; };
 		ED31A2ED1E8953FB00E058B8 /* TTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMainViewController.m; sourceTree = "<group>"; };
-		ED31A2F01E89565B00E058B8 /* TTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLoginViewController.h; sourceTree = "<group>"; };
-		ED31A2F11E89565B00E058B8 /* TTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTLoginViewController.m; sourceTree = "<group>"; };
 		ED31A2F31E895FAE00E058B8 /* TTCodingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTCodingViewController.h; sourceTree = "<group>"; };
 		ED31A2F41E895FAE00E058B8 /* TTCodingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTCodingViewController.m; sourceTree = "<group>"; };
 		ED31A2F71E8960EE00E058B8 /* TTDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDemoViewController.h; sourceTree = "<group>"; };
@@ -42,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F89FA78AFEE1461906F66BF6 /* libPods-TTComponentized.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		661C1CAF7C9B90CBB74FBA1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47911C6707A251771CB0115E /* libPods-TTComponentized.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6B0A410C27C1BCEC3B6705B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1A8E3FF0A7BE9B8320D1D69 /* Pods-TTComponentized.debug.xcconfig */,
+				5CE1FF2A2B28F79B9507D18E /* Pods-TTComponentized.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ED31A2C51E8951F200E058B8 = {
 			isa = PBXGroup;
 			children = (
 				ED31A2D01E8951F200E058B8 /* TTComponentized */,
 				ED31A2CF1E8951F200E058B8 /* Products */,
+				C6B0A410C27C1BCEC3B6705B /* Pods */,
+				661C1CAF7C9B90CBB74FBA1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,16 +88,15 @@
 		ED31A2D01E8951F200E058B8 /* TTComponentized */ = {
 			isa = PBXGroup;
 			children = (
-				ED31A2EB1E8953D200E058B8 /* Main Page */,
-				ED31A2EF1E89561100E058B8 /* Login */,
-				ED31A2F61E895FC200E058B8 /* Coding */,
-				ED31A2FA1E8960F400E058B8 /* Demo */,
 				ED31A2D41E8951F200E058B8 /* AppDelegate.h */,
 				ED31A2D51E8951F200E058B8 /* AppDelegate.m */,
 				ED31A2DD1E8951F200E058B8 /* Main.storyboard */,
 				ED31A2E01E8951F200E058B8 /* Assets.xcassets */,
 				ED31A2E21E8951F200E058B8 /* LaunchScreen.storyboard */,
 				ED31A2E51E8951F200E058B8 /* Info.plist */,
+				ED31A2EB1E8953D200E058B8 /* Main Page */,
+				ED31A2F61E895FC200E058B8 /* Coding */,
+				ED31A2FA1E8960F400E058B8 /* Demo */,
 				ED31A2D11E8951F200E058B8 /* Supporting Files */,
 			);
 			path = TTComponentized;
@@ -97,15 +117,6 @@
 				ED31A2ED1E8953FB00E058B8 /* TTMainViewController.m */,
 			);
 			name = "Main Page";
-			sourceTree = "<group>";
-		};
-		ED31A2EF1E89561100E058B8 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				ED31A2F01E89565B00E058B8 /* TTLoginViewController.h */,
-				ED31A2F11E89565B00E058B8 /* TTLoginViewController.m */,
-			);
-			name = Login;
 			sourceTree = "<group>";
 		};
 		ED31A2F61E895FC200E058B8 /* Coding */ = {
@@ -133,9 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED31A2E81E8951F200E058B8 /* Build configuration list for PBXNativeTarget "TTComponentized" */;
 			buildPhases = (
+				CE5BC3FC0E1E0ED652CD9B4D /* [CP] Check Pods Manifest.lock */,
 				ED31A2CA1E8951F200E058B8 /* Sources */,
 				ED31A2CB1E8951F200E058B8 /* Frameworks */,
 				ED31A2CC1E8951F200E058B8 /* Resources */,
+				5ECD56544229A86CA63C74E1 /* [CP] Embed Pods Frameworks */,
+				C792339FAD3C19B325914044 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +207,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5ECD56544229A86CA63C74E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTComponentized/Pods-TTComponentized-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C792339FAD3C19B325914044 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTComponentized/Pods-TTComponentized-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE5BC3FC0E1E0ED652CD9B4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED31A2CA1E8951F200E058B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -201,7 +263,6 @@
 				ED31A2D61E8951F200E058B8 /* AppDelegate.m in Sources */,
 				ED31A2F51E895FAE00E058B8 /* TTCodingViewController.m in Sources */,
 				ED31A2EE1E8953FB00E058B8 /* TTMainViewController.m in Sources */,
-				ED31A2F21E89565B00E058B8 /* TTLoginViewController.m in Sources */,
 				ED31A2D31E8951F200E058B8 /* main.m in Sources */,
 				ED31A2F91E8960EE00E058B8 /* TTDemoViewController.m in Sources */,
 			);
@@ -319,6 +380,7 @@
 		};
 		ED31A2E91E8951F200E058B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1A8E3FF0A7BE9B8320D1D69 /* Pods-TTComponentized.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZWR8MWYL3V;
@@ -331,6 +393,7 @@
 		};
 		ED31A2EA1E8951F200E058B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CE1FF2A2B28F79B9507D18E /* Pods-TTComponentized.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZWR8MWYL3V;
@@ -360,6 +423,7 @@
 				ED31A2EA1E8951F200E058B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
