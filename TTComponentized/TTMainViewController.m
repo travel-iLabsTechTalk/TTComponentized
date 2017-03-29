@@ -9,6 +9,7 @@
 #import "TTMainViewController.h"
 #import "CTMediator+TTLogin.h"
 #import "CTMediator+TTCoding.h"
+#import "CTMediator+TTDemo.h"
 
 @interface TTMainViewController ()
 
@@ -46,6 +47,9 @@
   if (indexPath.row == 0) {
     UIViewController *codingVC = [[CTMediator sharedInstance] TTCoding_viewController];
     [self.navigationController pushViewController:codingVC animated:YES];
+  } else if (indexPath.row == 1) {
+    UIViewController *demoVC = [[CTMediator sharedInstance] TTDemo_viewControllerWithText:@"Demo from main page"];
+    [self.navigationController pushViewController:demoVC animated:YES];
   }
 }
 
